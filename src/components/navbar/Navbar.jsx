@@ -2,7 +2,7 @@ import { ArrowDropDown } from "@material-ui/icons";
 import React from "react";
 import "./navbar.css";
 
-const Navbar = ({ name }) => {
+const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbarWrapper">
@@ -27,7 +27,7 @@ const Navbar = ({ name }) => {
             src="https://pbs.twimg.com/profile_images/1283759937177317376/iKqA9lOB_400x400.jpg"
             alt=""
           />
-          <span className="navbarName">{name}</span>
+          <span className="navbarName">Sadan</span>
           <ArrowDropDown />
         </div>
       </div>

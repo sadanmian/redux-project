@@ -28,7 +28,12 @@ export default function Update() {
             </div>
             <div className="formItem">
               <label>Username</label>
-              <input className="formInput" type="text" placeholder="Sadan" />
+              <input
+                className="formInput"
+                type="text"
+                placeholder="Sadan"
+                onChange={(e) => setName(e.target.value)}
+              />
             </div>
             <div className="formItem">
               <label>Email</label>
@@ -36,6 +41,7 @@ export default function Update() {
                 className="formInput"
                 type="text"
                 placeholder="sadan@gmail.com"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="formItem">
