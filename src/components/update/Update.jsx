@@ -2,8 +2,10 @@ import React from "react";
 import Warning from "../warning/Warning";
 import "./update.css";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 export default function Update() {
+  const user = useSelector((state) => state.user);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
@@ -31,7 +33,7 @@ export default function Update() {
               <input
                 className="formInput"
                 type="text"
-                placeholder="Sadan"
+                placeholder={user.name}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
@@ -40,7 +42,7 @@ export default function Update() {
               <input
                 className="formInput"
                 type="text"
-                placeholder="sadan@gmail.com"
+                placeholder={user.email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>

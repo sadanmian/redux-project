@@ -2,8 +2,8 @@ const { createSlice } = require("@reduxjs/toolkit");
 
 // Initial State
 const initialState = {
-  name: "Mian",
-  email: "email",
+  name: "mian",
+  email: "mian@gmail.com",
 };
 
 export const userSlice = createSlice({
