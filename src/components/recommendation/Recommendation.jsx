@@ -4,9 +4,9 @@ import "./recommendation.css";
 export default function Recommendation({ type }) {
   const title =
     type === "user"
-      ? "Reccomended for John"
+      ? "Reccomended for Sadan"
       : type === "popular"
-      ? "Popular on Lama App"
+      ? "Popular on Redux App"
       : "Editor's choice";
 
   const img =
