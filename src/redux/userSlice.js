@@ -6,7 +6,7 @@ const initialState = {
   email: "mian@gmail.com",
 };
 
-export const userSlice = createSlice({
+const userSlice = createSlice({
   // Store name
   name: "user",
   // Initial State
