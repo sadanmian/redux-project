@@ -6,7 +6,7 @@ const initialState = {
     name: "mian",
     email: "mian@gmail.com",
   },
-  pending: false,
+  pending: null,
   error: false,
 };
 
